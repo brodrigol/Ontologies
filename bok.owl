@@ -1,0 +1,518 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/anita/ontologies/2020/11/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/anita/ontologies/2020/11/untitled-ontology-4">
+    <Prefix name="" IRI="http://www.semanticweb.org/anita/ontologies/2020/11/untitled-ontology-4"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://dbpedia.org/ontology/Book</Import>
+    <Import>http://readit-project.eu/ont/datamodel</Import>
+    <Import>http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21</Import>
+    <Import>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.ttl</Import>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/WrittenWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DateIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DateOut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#File"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Letter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Networking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Purpose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scholar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.wikidata.org/entity/Q571"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAttachedFile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPurpose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReceiver"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSender"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inResponseTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasReceived"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasSent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Admiration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Author"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Draft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Editor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Editorial_work"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Finished"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Friendship"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Literature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Read"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reader"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Recognition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Social_issues"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Support"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Write"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/Book"/>
+        <Class IRI="#Book"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/WrittenWork"/>
+        <Class IRI="#File"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://erlangen-crm.org/current/E21_Person"/>
+        <Class IRI="#Person"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://erlangen-crm.org/current/E7_Activity"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
+        <Class IRI="http://readit-project.eu/ont/datamodel#Activity"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.org/ontology/bibo/Book"/>
+        <Class IRI="#Book"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://readit-project.eu/ont/term#ReadingResource"/>
+        <Class IRI="#File"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://schema.org/Book"/>
+        <Class IRI="#Book"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person"/>
+        <Class IRI="#Person"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Book"/>
+        <Class IRI="http://www.wikidata.org/entity/Q571"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DateIn"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#date"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DateOut"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#date"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/Book"/>
+        <Class IRI="http://dbpedia.org/ontology/WrittenWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Book"/>
+        <Class IRI="#File"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Letter"/>
+        <Class IRI="#File"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Networking"/>
+        <Class IRI="#Purpose"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Personal"/>
+        <Class IRI="#Purpose"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professional"/>
+        <Class IRI="#Purpose"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scholar"/>
+        <Class IRI="#Purpose"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#File"/>
+        <Class IRI="#Person"/>
+        <Class IRI="#Purpose"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Networking"/>
+        <Class IRI="#Personal"/>
+        <Class IRI="#Professional"/>
+        <Class IRI="#Scholar"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Personal"/>
+        <NamedIndividual IRI="#Admiration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#Author"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#Draft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#Editor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Professional"/>
+        <NamedIndividual IRI="#Editorial_work"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#Finished"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Personal"/>
+        <NamedIndividual IRI="#Friendship"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Scholar"/>
+        <NamedIndividual IRI="#Literature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
+        <NamedIndividual IRI="#Read"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#Reader"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Networking"/>
+        <NamedIndividual IRI="#Recognition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Scholar"/>
+        <NamedIndividual IRI="#Social_issues"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Networking"/>
+        <NamedIndividual IRI="#Support"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Personal"/>
+        <NamedIndividual IRI="#Support"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
+        <NamedIndividual IRI="#Write"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRole"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#inResponseTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#wasReceived"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#wasSent"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/producedObservation"/>
+        <Class IRI="http://modellingdh.github.io/ont/odp/term/Prompting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAttachedFile"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPurpose"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReceiver"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSender"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasState"/>
+        <Class IRI="#Book"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inResponseTo"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involves"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wasReceived"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wasSent"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAttachedFile"/>
+        <Class IRI="#File"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPurpose"/>
+        <Class IRI="#Purpose"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasReceiver"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSender"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasState"/>
+        <Class IRI="#State"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inResponseTo"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involves"/>
+        <Class IRI="#File"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasReceived"/>
+        <Class IRI="#DateIn"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasSent"/>
+        <Class IRI="#DateOut"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/ontology/bibo/Book</IRI>
+        <Literal>A work printed on sheets of paper bound together</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person</IRI>
+        <Literal>The actual self or individual personality of a human being</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Admiration</IRI>
+        <Literal>A feeling of pleasure, approval, and often respect or wonder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Author</IRI>
+        <Literal>Someone who creates a book, article, etc.; writer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Draft</IRI>
+        <Literal>An early version of a writing that may be revised</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Editor</IRI>
+        <Literal>An instance or the process of editing, as of correcting something</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Editorial_work</IRI>
+        <Literal>Content that presents the opinion of the readers or editors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#File</IRI>
+        <Literal>Any written item, as a book, article, or letter, esp. of a factual or informative nature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Finished</IRI>
+        <Literal>Polished to the highest degree of excellence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Friendship</IRI>
+        <Literal>Friendly feeling or disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Letter</IRI>
+        <Literal>A written or printed message or communication addressed to a person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Literature</IRI>
+        <Literal>The entire body of writings of a specific language, period, people, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Networking</IRI>
+        <Literal>The informal sharing of information and services among individuals or groups that have a common interest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Personal</IRI>
+        <Literal>Directed to or intended for a particular person privately</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Professional</IRI>
+        <Literal>Of or for a professional person or such a person&apos;s place of business</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Purpose</IRI>
+        <Literal>The reason for which something exists or is done</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reader</IRI>
+        <Literal>A person who reads (something) in a specified way</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Recognition</IRI>
+        <Literal>Identification of a person or thing as having previously been seen, heard and known</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Role</IRI>
+        <Literal>The proper function of a person or thing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Scholar</IRI>
+        <Literal>Concerned with academic learning and research</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Social_issues</IRI>
+        <Literal>A group of studies associated together for religious, cultural, scientific, or other purposes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#State</IRI>
+        <Literal>The condition of substances with respect to structure and form</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Support</IRI>
+        <Literal>To uphold by showing one&apos;s agreement with or faith in</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
