@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-22"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-22">
+    <Prefix name="" IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-22"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21</Import>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#PublicationDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DateIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DateOut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Letter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Networking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proffesional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Purpose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scholar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#hasState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#publishedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#writenBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#wrote"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Received"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Sent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPurpose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReceiver"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSender"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#precedes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#responseTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasReceived"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasSent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Draft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Finished"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Admiration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Editorial_work"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Friendship"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Literature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Recognition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Social_issues"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Support"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Person"/>
+        <Class IRI="#Person"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#PublicationDate"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#date"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DateIn"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#date"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DateOut"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#date"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Networking"/>
+        <Class IRI="#Purpose"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Personal"/>
+        <Class IRI="#Purpose"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Proffesional"/>
+        <Class IRI="#Purpose"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scholar"/>
+        <Class IRI="#Purpose"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#State"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Draft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#State"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Finished"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Personal"/>
+        <NamedIndividual IRI="#Admiration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Proffesional"/>
+        <NamedIndividual IRI="#Editorial_work"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Personal"/>
+        <NamedIndividual IRI="#Friendship"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Scholar"/>
+        <NamedIndividual IRI="#Literature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Networking"/>
+        <NamedIndividual IRI="#Recognition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Scholar"/>
+        <NamedIndividual IRI="#Social_issues"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Networking"/>
+        <NamedIndividual IRI="#Support"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Personal"/>
+        <NamedIndividual IRI="#Support"/>
+    </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#writenBy"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#wrote"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Received"/>
+        <ObjectProperty IRI="#hasReceiver"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Sent"/>
+        <ObjectProperty IRI="#hasSender"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#precedes"/>
+        <ObjectProperty IRI="#responseTo"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#hasState"/>
+        <Class IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Book"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#publishedIn"/>
+        <Class IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Book"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#writenBy"/>
+        <Class IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Book"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Received"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Sent"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPurpose"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReceiver"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSender"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#precedes"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#responseTo"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wasReceived"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wasSent"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#hasState"/>
+        <Class IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#State"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#publishedIn"/>
+        <Class IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#PublicationDate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#writenBy"/>
+        <Class IRI="http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Received"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Sent"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPurpose"/>
+        <Class IRI="#Purpose"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasReceiver"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSender"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#precedes"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#responseTo"/>
+        <Class IRI="#Letter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasReceived"/>
+        <Class IRI="#DateIn"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasSent"/>
+        <Class IRI="#DateOut"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
