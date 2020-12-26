@@ -15,6 +15,7 @@
     <Import>http://dbpedia.org/ontology/Book</Import>
     <Import>http://readit-project.eu/ont/datamodel</Import>
     <Import>http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21</Import>
+    <Import>https://raw.githubusercontent.com/brodrigol/Ontologies/main/Book.owl</Import>
     <Import>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.ttl</Import>
     <Declaration>
         <Class IRI="http://dbpedia.org/ontology/WrittenWork"/>
