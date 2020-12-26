@@ -1,0 +1,70 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#date"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Book",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Draft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#State" ]
+}, {
+  "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Finished",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#State" ]
+}, {
+  "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#PublicationDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#State",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#hasState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Book"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#State"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#publishedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Book"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#PublicationDate"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#writenBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Book"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#wrote"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/blanca/ontologies/2020/11/untitled-ontology-21#wrote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+} ]
